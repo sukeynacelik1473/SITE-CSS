@@ -1,0 +1,86 @@
+/*Genel biçimlendirme*/
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+/*header bölümü*/
+
+body{
+    min-height:100vh; /*vh  view height görünen alanını yüksekliği*/
+    display: flex;
+    flex-direction: column; /*içindeki nesnelerin hangi yönde yerleşeceği*/
+    line-height: 1.5em;
+}
+
+header,footer{
+    padding-top:30px;
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+}
+header h1{
+    font-size: 2.4em;
+}
+
+#main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: center;  /*içindeki flex öğleri ortalanır*/
+}
+
+#main-menu a{
+    display: block;
+    color:#fff;
+    text-decoration: none;
+    padding:12px 10px;
+    
+}
+
+
+/*orta bölüm*/
+main{
+    display: flex;
+    gap:20px; /*içindeki nesneler arasında boşluk bırak*/
+    padding:20px;
+    flex:auto;
+}
+
+#content{
+    background-color: #ffc845;
+    padding:20px; /*iç boşluk*/
+    border:#52565e solid 1px;
+    flex:9;
+}
+
+#content p{
+    margin-bottom: 10px;
+    margin-top:5px;
+}
+
+
+aside{
+    background-color: #ffc845;
+    padding:20px;
+    border:#52565e solid 1px;
+    flex:3;
+}
+
+aside h2{
+    margin-bottom: 10px;
+}
+
+aside ul{
+    list-style: none;
+}
+
+aside a{
+    color:#000;
+}
+
+footer{
+    padding-bottom:30px;
+}
